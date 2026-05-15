@@ -9,8 +9,8 @@
                 background-color: black;
             }
             .contenedor{
-                width: 400;
-                height: 700;
+                width: 400px;
+                height: 700px;
                 background-color: yellow;
                 position: relative;
                 overflow: hidden;
@@ -20,10 +20,12 @@
             .cuadrito1{
                 height: 100px;
                 width: 100px;
-                background-color: red;
+                background-image: url(img/COCO2.png);
+                background-size: cover;
                 position: absolute;
                 left:100px;
                 top:-100px;
+
                 animation: cuadrito1 4s infinite forwards 1s;
             }
             @keyframes cuadrito1{
@@ -47,9 +49,10 @@
             }
 
             .cuadrito2{
-                height: 100px;
-                width: 100px;
-                background-color: red;
+                height: 150px;
+                width: 150px;
+                background-image: url(img/COCO3.png);
+                background-size: cover;
                 position: absolute;
                 left:50px;
                 top:-100px;
@@ -74,10 +77,31 @@
                     rotate:0deg;
                 }
             }
+
+            .rama{
+                width: 400px;
+                height: 500px;
+                background-image: url(img/RAMA.png);
+                background-size: cover;
+                position: absolute;
+                left:100px;
+                top:-160px;
+                rotate: 10deg;
+                animation: rama 1.5s infinite alternate linear;
+            }
+            @keyframes rama {
+                from{
+                    rotate:10deg;
+                }
+                to{
+                    rotate:22deg;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="contenedor">
+            <div class="rama"></div>
             <div class="cuadrito1"></div>            
             <div class="cuadrito2"></div>            
             <div class="cuadrito3"></div>            
